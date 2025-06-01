@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fancy Neon Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .neon-box {
+      position: relative;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      box-shadow: 0 0 25px #00ffe0;
+      overflow: hidden;
+    }
+
+    .neon-box::before,
+    .neon-box::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      background: linear-gradient(45deg, #ff00cc, #3333ff, #00fff7, #ff0099, #ff00cc);
+      background-size: 400%;
+      z-index: -1;
+      border-radius: 20px;
+      animation: neonRotate 8s linear infinite;
+    }
+
+    .neon-box::after {
+      filter: blur(20px);
+    }
+
+    @keyframes neonRotate {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .neon-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 28px;
+      color: #00fff7;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      outline: none;
+      border-radius: 8px;
+      background: #111;
+      color: #fff;
+      box-shadow: 0 0 10px #00ffe0;
+    }
+
+    input[type="radio"] {
+      margin-right: 8px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      outline: none;
+      background: #00ffe0;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffe0, 0 0 40px #00ffe0, 0 0 80px #00ffe0;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffe0, 0 0 60px #00ffe0;
+    }
+
+    p {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-box">
+    <h2>Sign Up</h2>
+    <input type="text" id="name" placeholder="Enter Your Name"><br>
+    <input type="email" id="signupEmail" placeholder="Email"><br>
+    <input type="password" id="signupPassword" placeholder="Password"><br>
+    <input type="password" id="rePassword" placeholder="Reenter Password"><br>
+    <label><input type="radio"> I accept the terms and conditions</label><br><br>
+    <button onclick="signUp()">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script type="module" src="login.js"></script>
+</body>
+</html>

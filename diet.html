@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diet Planner</title>
+  <link rel="stylesheet" href="diet.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HealthIT</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#diet">Diet Plan</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Get Your Personalized 7-Day Diet Plan</h2>
+      <form id="diet-form">
+        <label>Goal:
+          <select id="goal" required>
+            <option value="">Select...</option>
+            <option value="weightloss">Weight Loss</option>
+            <option value="muscle">Muscle Gain</option>
+            <option value="maintain">Maintain</option>
+          </select>
+        </label>
+        <label>Target Calories per Day:
+          <input type="number" id="calories" min="1000" max="5000" required />
+        </label>
+        <label>Dietary Preference:
+          <select id="diet" required>
+            <option value="">Select...</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+          </select>
+        </label>
+        <button type="submit">Generate Diet Chart</button>
+      </form>
+    </section>
+
+    <section id="results" class="results-section">
+      <!-- Diet chart will appear here -->
+    </section>
+  </main>
+
+  <script src="diet.js"></script>
+</body>
+</html>
+
+
+
+

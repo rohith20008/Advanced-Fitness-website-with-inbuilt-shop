@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #111;
+  color: #0ff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #0ff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.form-section,
+.results-section,
+.chat-section {
+  margin-bottom: 2rem;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0ff;
+}
+
+label, input, select, button {
+  display: block;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #0ff;
+  color: #000;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day-card {
+  margin: 1rem 0;
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.meal {
+  margin: 0.5rem 0;
+}
+
+.chatbox {
+  height: 300px;
+  overflow-y: scroll;
+  border: 1px solid #0ff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #0f0f0f;
+}
+
+.chatbox p {
+  margin: 0.5rem 0;
+}
+
+#chat-input {
+  width: calc(100% - 80px);
+  padding: 0.5rem;
+}
+
+#chat-form {
+  display: flex;
+  gap: 10px;
+}
+
+  

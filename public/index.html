@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fit Courses</title>
+  <link rel="stylesheet" href="course.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🏋️ FitPro Academy</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="diet.html">Diet Plans</a>
+      <a href="courses.html">Courses</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Enroll in a Fitness Course</h1>
+    
+    <div class="course-showcase">
+      <div class="course-card">
+        <img src="pexels-johnny-garcia-1041229-2011383.jpg" alt="Fat Burn Bootcamp" />
+        <h2>Fat Burn Bootcamp</h2>
+        <p>Price: ₹999</p>
+      </div>
+      <div class="course-card">
+        <img src="pexels-panther-1547248.jpg" alt="Muscle Mastery" />
+        <h2>Muscle Mastery</h2>
+        <p>Price: ₹1299</p>
+      </div>
+      <div class="course-card">
+        <img src="pexels-pixabay-416754.jpg" alt="Yoga Zen Mode" />
+        <h2>Yoga Zen Mode</h2>
+        <p>Price: ₹799</p>
+      </div>
+    </div>
+
+    <form id="course-form" action="/send-email" method="POST">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="medical" placeholder="Medical Issues" />
+      <input type="text" id="occupation" placeholder="Occupation" required />
+      <input type="text" id="height" placeholder="Height (cm)" required />
+
+      <select id="course" required>
+        <option value="">Select a Course</option>
+        <option value="Fat Burn Bootcamp">Fat Burn Bootcamp - ₹999</option>
+        <option value="Muscle Mastery">Muscle Mastery - ₹1299</option>
+        <option value="Yoga Zen Mode">Yoga Zen Mode - ₹799</option>
+      </select>
+
+      <input type="text" id="coupon" placeholder="Discount Code (e.g., FIT50)" />
+      <p id="price-info">Total: ₹0</p>
+
+      <button type="submit">Confirm & Enroll</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

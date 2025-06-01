@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+}
+.hero{
+    object-fit: cover;
+width: 100%;
+height: 100vh;
+position: relative;
+top: 0;
+left: 0;
+    background-color: black;
+    background-image:url(xK.gif) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    padding: 0 8%;
+   
+    
+}
+.logo{
+    width: 140px;
+    transition: 0.5s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 30px;
+    color: lavenderblush;
+    font-family: cursive;
+    height: auto;
+    width: auto;
+    
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.sos a{
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 40px;
+   
+    margin: 40px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+    
+    background-size: 100% 200%;
+    background-position: 0% 5%;
+    transition: background-position 0.8s , color 0.8s;
+    position: relative;
+    
+
+}
+.sos .youtube{
+    margin-left: 300px;
+    background-image: linear-gradient(#ddd 50%, rgb(223, 31, 89) 50%);
+}
+.sos a:nth-child(1){
+    color: #FF0000;
+    background-image: linear-gradient(#ddd 50%,#FF0000 50%);
+    animation-delay: 0.5s;
+    transition: 0.5;
+   
+}
+.sos a:nth-child(2){
+    color: rgb(239, 32, 115);
+    background-image: linear-gradient(#ddd 50%, rgb(223, 31, 89) 50%);
+    animation-delay: 1s;
+    transition: 1s;
+  
+}
+.sos a:nth-child(3){
+    color: #1DA1F2;
+    background-image: linear-gradient(#ddd 50%, #1DA1F2 50%);
+    animation-delay: 1.5s;
+    transition: 1.5s;
+  
+  
+   
+}
+.sos a:nth-child(4){
+    color:#1877F2 ;
+    background-image: linear-gradient(#ddd 50%, #1877F2 50%);
+    animation-delay: 2s;
+    transition: 2s;
+  
+  
+
+
+}
+.sos a:hover{
+    background-position: 0% 100%;
+    color: white;
+}
+
+
+.box{
+    height:100px;
+    width:auto;
+    border: solid 5px rgb(89, 53, 75) ;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    margin-top: 10px;
+    padding: 10px;
+    background-image:linear-gradient(rgb(37, 0, 53) 50%,rgb(0, 0, 0) ) ;
+    transition:0.5s;
+    animation-delay:0.5s;
+}
+.box h2{
+    text-align: center;
+    animation-delay: 1s;
+
+    
+}
+.box p{
+    font-family: cursive;
+    animation-delay: 1.5s;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px) ;
+    }
+}
+
